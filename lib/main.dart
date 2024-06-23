@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Colors.amber,
+        // color: Colors.amber,
         padding: const EdgeInsets.symmetric(
           horizontal: 10,
         ),
@@ -65,8 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
               bottom: 10,
               child: Container(
                 height: 50,
-                width: 280,
-                color: Colors.green,
+                width: MediaQuery.of(context).size.width * .95,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(24),
+                ),
               ),
             )
           ],
